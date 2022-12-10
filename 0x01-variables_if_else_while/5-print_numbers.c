@@ -1,4 +1,6 @@
+#include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 /**
  * main	-	Entry point
  * Return:	Always return 0 (success)
@@ -7,17 +9,9 @@
  */
 int main(void)
 {
-	char c;
+	int i;
 
-	for (c = 'a'; c <= 'z'; ++c)
-	{
-		if (a == 'e')
-			continue;
-		else if (a == 'q')
-			continue;
-		else
-			putchar(c);
-	}
-	putchar(10);
+	for (i = 0; i < 10; i++)
+		printf("%d \n", i);
 	return (0);
 }
