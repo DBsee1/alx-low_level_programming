@@ -11,9 +11,9 @@ int main(void)
 
 	for (c = 'a'; c <= 'z'; ++c)
 	{
-		if (a == 'e')
+		if (c == 'e')
 			continue;
-		else if (a == 'q')
+		else if (c == 'q')
 			continue;
 		else
 			putchar(c);
