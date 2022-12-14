@@ -1,15 +1,10 @@
-#include<stdio.h>
-#include<main.h>
+#include "main.h"
 
 /**
- * main	-	code entry point;
- *
- * Description:	writint a program that print _putchar function;
+ * print_alphabet_x10	-	 prints 10 times the alphabet, in lowercase,
+ * followed by a new line.
  *
  * Return:	Always Return (0);
- *
- * print_alphabet -	prints alphabet;
- * void:	void;
  */
 
 void print_alphabet_x10(void)
@@ -25,11 +20,4 @@ void print_alphabet_x10(void)
 		}
 		_putchar('\n');
 	}
-}
-
-int main(void)
-{
-	print_alphabet_x10();
-	_putchar('\n');
-	return (0);
 }

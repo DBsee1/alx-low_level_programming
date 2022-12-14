@@ -15,10 +15,3 @@ void print_alphabet(void)
 	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 		_putchar(alphabet);
 }
-
-int main(void)
-{
-	print_alphabet();
-	_putchar('\n');
-	return (0);
-}
