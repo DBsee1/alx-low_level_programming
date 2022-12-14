@@ -2,14 +2,14 @@
 
 /**
  *_abs	-	 a function that computes the absolute value of an integer;
- *@int:	a data type;
+ *@n:	a data type;
  * Return:	Always return (0);
  */
 
-int _abs(int)
+int _abs(int n)
 {
-	if (int < 0)
-		return (-int);
+	if (n < 0)
+		return (-n);
 	else
-		return (int);
+		return (n);
 }
