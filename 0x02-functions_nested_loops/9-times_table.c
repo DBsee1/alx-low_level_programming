@@ -28,7 +28,7 @@ void times_table(void)
 			{
 				_putchar((dc / 2) + '0');
 			}
-			esle
+			else
 			{
 				_putchar(' ');
 			}
