@@ -12,7 +12,6 @@
 
 int _isupper(int c)
 {
-	/*Using if-statement*/
 
 	if ((c >= 'A') && (c <= 'Z'))
 		return (1);
