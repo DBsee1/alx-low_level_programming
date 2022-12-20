@@ -11,7 +11,10 @@ void print_rev(char *s)
 	int count = 0;
 	int i;
 
-	/*find the length of a string */
+	/*Find the length of the string and store a copy */
+	/* of the original string pointer */
+	char *temp_s = s;
+
 	while (*s != '\0')
 	{
 		count++;
@@ -21,7 +24,7 @@ void print_rev(char *s)
 	/*print a string in reverse*/
 	for (i = count - 1; i >= 0; i--)
 	{
-		_putchar(s[i]);
+		_putchar(temp_s[i]);
 	}
 	_putchar('\n');
 }
