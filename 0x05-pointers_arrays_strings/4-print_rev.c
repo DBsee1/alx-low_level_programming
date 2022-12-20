@@ -12,7 +12,7 @@ void print_rev(char *s)
 	int i;
 
 	/*find the length of a string */
-	while (s != '\0')
+	while (*s != '\0')
 	{
 		count++;
 	}
