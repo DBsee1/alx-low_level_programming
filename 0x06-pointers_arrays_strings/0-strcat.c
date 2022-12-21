@@ -23,4 +23,6 @@ char *_strcat(char *dest, char *src)
 		end_of_str++;
 		src++;
 	}
+	*end_of_str = '\0';
+	return (dest);
 }
