@@ -11,8 +11,9 @@
 char *_strcat(char *dest, char *src)
 {
 	char *end_of_str = dest;
+	int i;
 
-	while (*end_of_str != '\0')
+	for (i = 0; dest[i] != '\0'; i++)
 	{
 		end_of_str++;
 	}
