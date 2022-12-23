@@ -10,20 +10,16 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char *end_of_str = dest;
-	int i;
+	int i, j;
 
 	for (i = 0; dest[i] != '\0'; i++)
 	{
-		end_of_str++;
+
 	}
-	/* append src to dest */
-	while (*src != '\0')
+
+	for (j = 0; (dest[i + j] = *src++); != '\0'; j++)
 	{
-		*end_of_str = *src;
-		end_of_str++;
-		src++;
+
 	}
-	*end_of_str = '\0';
 	return (dest);
 }
