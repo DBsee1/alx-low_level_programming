@@ -27,4 +27,5 @@
  (c).If one of the number contains symbols that are not digits, print Error, followed by a new line, and return 1
  (d).You can assume that numbers and the addition of all the numbers can be stored in an int
 
+Author
 
