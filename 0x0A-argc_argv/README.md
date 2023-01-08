@@ -1,4 +1,5 @@
-==================================Project========================================
+==================================Project========================================.
+
 (0).Write a program that prints its name, followed by a new line.
 
   (a).If you rename the program, it will print the new name, without having to compile it again
