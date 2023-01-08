@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 #include <stdio.h>
-
-=======
-##include <stdio.h>
 #include "main.h"
->>>>>>> 86f6d0269b6fcd324091794923f69d07f6150e02
+
 /**
  * main - prints its name + \n
  * @argc: number of arguments typed
