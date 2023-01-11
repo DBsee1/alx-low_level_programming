@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "main.h"
 
 /**
  * _strdup	-	a function that returns a pointer to a newly allocated
@@ -12,16 +11,16 @@
 
 char *_strdup(char *str)
 {
-	int strlen;
+	int strl;
 	char *duplicate;
 
 	if (str == NULL)
 		return (NULL);
-	strlen = strlen(str) + 1;
-	duplicate = malloc(sizeof(char) * strlen);
+	strl = strlen(str) + 1;
+	duplicate = malloc(sizeof(char) * strl);
 	if (duplicate == NULL)
 		return (NULL);
 
-	strncpy(duplicate, str, strlen);
+	strncpy(duplicate, str, strl);
 	return (duplicate);
 }
