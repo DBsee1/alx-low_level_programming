@@ -1,44 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+
 /**
- * str_concat - get ends of input and add together for size
- * @s1: input one to concat
- * @s2: input two to concat
- * Return: concat of s1 and s2
+ * str_concat   -       get ends of input and adds together for size
+ * @s1: input one to concate
+ * @s2: input one to concate
+ * Return: concate of s1 and s2
  */
+
 char *str_concat(char *s1, char *s2)
 {
-	int end1, end2, i = 0;
-	char *array;
+	int i, j;
+	int size;
+	char *arr;
 
 	if (s1 == NULL || s2 == NULL)
-		s1 = s2 = "";
+		return (" ");
 
-	for (end1 = 0; end1 <= *s1; end1++)
-	{
-	}
-
-	for (end2 = 0; end2 <= *s2; end2++)
-	{
-	}
-
-	array = malloc(sizeof(char) * (end1 + end2 + 1));
-
-	if (array == NULL)
+	size = strlen(s1) + strlen(s2) + 1;
+	arr = malloc(sizeof(char) * size);
+	if (arr == NULL)
 		return (NULL);
-
-	while (*s1)
+	for (i = 0; s1[i]; i++)
 	{
-		array[i] = *s1;
-		i++;
-		s1++;
+		arr[i] = s1[i];
 	}
 
-	while (*s2)
+	for (j = 0; s2[j]; j++)
 	{
-		array[i] = *s2;
-		i++;
-		s2++;
+		arr[i + j] = s2[j];
 	}
-	return (array);
+	result[i + j] = '\0';
+	return (result);
+
 }
