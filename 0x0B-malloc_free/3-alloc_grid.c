@@ -7,35 +7,38 @@
  * @height: height input
  * Return: pointer to 2 dim. array
  */
+
 int **alloc_grid(int width, int height)
 {
-	int **iarray;
-	int i, n;
+	int i, j;
+	int **grid;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-
-	iarray = malloc(sizeof(int) * height);
-
-	if (iarray == NULL)
-	{
-		free(iarray);
+	grid = malloc(height * sizeof(int *));
+	if (grid == NULL)
 		return (NULL);
+
+	for (i = 0; i < height; i++)
+	{
+		grid[i] = malloc(width * sizeof(int));
+		if (grid[i] == NULL)
+		{
+			for (j = 0; j < i; j++)
+			{
+				free(grid[j]);
+				free(grid);
+			}
+		}
 	}
 
 	for (i = 0; i < height; i++)
 	{
-		iarray[i] = malloc(sizeof(int) * width);
-		if (iarray == NULL)
+		for (j = 0; j < width; j++)
 		{
-			free(iarray);
-			return (NULL);
-		}
-
-		for (n = 0; n < width; n++)
-		{
-			iarray[i][n] = 0;
+			grid[i][j] = 0;
 		}
 	}
-	return (iarray);
+	return (grid);
+
 }
