@@ -1,17 +1,18 @@
-#include <stdio.h>
 #include <stdlib.h>
-#include "main.h"
+#include "dog.h"
 
 /**
- * free_dog	-	a function that free dog
- * @d:	 struct varaible
- * Return:	0
+ * free_dog - frees dogs
+ * @d: pointer to dog to free
+ *
+ * Return: void
  */
-
 void free_dog(dog_t *d)
 {
-	d = malloc(sizeof(dog_t));
-	if (d == NULL)
-		return;
-	free(d);
+	if (d)
+	{
+		free(d->name);
+		free(d->owner);
+		free(d);
+	}
 }
