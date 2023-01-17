@@ -16,4 +16,5 @@
    4.  [ A door is what a dog is perpetually on the wrong side of](https://github.com/DBsee1/alx-low_level_programming/blob/master/0x0E-structures_typedef/4-new_dog.c)
 
    5. [How many legs does a dog have if you call his tail a leg? Four. Saying that a tail is a leg doesn't make it a leg](https://github.com/DBsee1/alx-low_level_programming/blob/master/0x0E-structures_typedef/5-free_dog.c)
-# [OpenAI website](https://openai.com)
+
+### Author DBsee1
