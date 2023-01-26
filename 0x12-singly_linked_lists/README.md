@@ -26,4 +26,4 @@ What you should learn from this project:
 ---
 
 ## Author
-* **DBsee1** - [kai-dg](https://github.com/DBsee1)
+* **DBsee1** - [DBsee1](https://github.com/DBsee1)
