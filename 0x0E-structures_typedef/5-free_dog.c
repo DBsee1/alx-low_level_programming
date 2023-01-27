@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "dog.h"
+#include "main.h"
 
 /**
  * free_dog - frees dogs
@@ -16,3 +16,4 @@ void free_dog(dog_t *d)
 		free(d);
 	}
 }
+
