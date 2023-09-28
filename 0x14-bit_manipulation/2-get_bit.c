@@ -9,14 +9,14 @@
  */
 int get_bit(unsigned long int lng_int, unsigned int indx)
 {
-	unsigned int i;
+	unsigned int x;
 
-	if (lnt_int == 0 && indx < 64)
+	if (lng_int == 0 && indx < 64)
 		return (0);
 
-	for (i = 0; i <= 63; lng_int >>= 1, i++)
+	for (x = 0; x <= 63; lng_int >>= 1, x++)
 	{
-		if (indx == i)
+		if (indx == x)
 		{
 			return (lng_int & 1);
 		}
